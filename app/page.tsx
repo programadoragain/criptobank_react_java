@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderBox from './components/ui/HeaderBox';
+import HeaderBox from './components/HeaderBox';
 
 function Home() {
 const loggedIn = { firstName: 'John' };
@@ -13,6 +13,13 @@ const loggedIn = { firstName: 'John' };
             title="Welcome to Criptobank"
             user={loggedIn?.firstName || 'Guest'}
             description="Let's start holding your crypto!"
+          />
+
+          <TotalBalanceBox 
+            accounts={[]}
+            totalBanks={0}
+            totalBalance={1}
+            totalCurrentBalance={1250.5}
           />
         </header>
       </div>
