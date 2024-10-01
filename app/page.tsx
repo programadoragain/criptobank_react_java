@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderBox from './components/HeaderBox';
+import TotalBalanceBox from './components/TotalBalanceBox';
 
 function Home() {
 const loggedIn = { firstName: 'John' };
@@ -17,7 +18,7 @@ const loggedIn = { firstName: 'John' };
 
           <TotalBalanceBox 
             accounts={[]}
-            totalBanks={0}
+            totalBanks={1}
             totalBalance={1}
             totalCurrentBalance={1250.5}
           />
